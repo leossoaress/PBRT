@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\assimp-3.3\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Raytracer">
+				<Option output="/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Raytracer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 Raytracer"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Raytracer/fast">
+				<Option output="/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Raytracer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 Raytracer/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/buffer.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/buffer.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/camera.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/camera.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/main.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/main.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/material.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/material.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/onb.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/onb.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/orthographic_camera.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/orthographic_camera.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/perspective_camera.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/perspective_camera.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/primitive.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/primitive.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/ray.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/ray.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/raytracer.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/raytracer.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/scene.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/scene.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/sphere.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/sphere.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/triangle.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/triangle.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/../../../../../../usr/local/lib/cmake/assimp-3.3/assimp-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\assimp-3.3\"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/../../../../../../usr/local/lib/cmake/assimp-3.3/assimp-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\assimp-3.3\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

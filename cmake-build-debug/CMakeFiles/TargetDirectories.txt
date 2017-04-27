@@ -1,0 +1,3 @@
+/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir
