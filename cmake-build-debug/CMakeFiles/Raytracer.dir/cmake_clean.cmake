@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Raytracer.dir/scene.cpp.o"
   "CMakeFiles/Raytracer.dir/sphere.cpp.o"
   "CMakeFiles/Raytracer.dir/triangle.cpp.o"
+  "CMakeFiles/Raytracer.dir/mirror.cpp.o"
   "Raytracer.pdb"
   "Raytracer"
 )

@@ -19,3 +19,8 @@ glm::vec3 Diffuse::get_emitancia() const
 {
     return emitancia_;
 }
+
+int Diffuse::get_tipo() const
+{
+    return 0;
+}

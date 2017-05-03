@@ -11,11 +11,15 @@ CMakeFiles/Raytracer.dir/camera.cpp.o: ../ray.h
 
 CMakeFiles/Raytracer.dir/diffuse.cpp.o: ../diffuse.cpp
 CMakeFiles/Raytracer.dir/diffuse.cpp.o: ../diffuse.h
+CMakeFiles/Raytracer.dir/diffuse.cpp.o: ../intersection_record.h
 CMakeFiles/Raytracer.dir/diffuse.cpp.o: ../material.h
+CMakeFiles/Raytracer.dir/diffuse.cpp.o: ../ray.h
 
+CMakeFiles/Raytracer.dir/lightsource.cpp.o: ../intersection_record.h
 CMakeFiles/Raytracer.dir/lightsource.cpp.o: ../lightsource.cpp
 CMakeFiles/Raytracer.dir/lightsource.cpp.o: ../lightsource.h
 CMakeFiles/Raytracer.dir/lightsource.cpp.o: ../material.h
+CMakeFiles/Raytracer.dir/lightsource.cpp.o: ../ray.h
 
 CMakeFiles/Raytracer.dir/main.cpp.o: ../buffer.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../camera.h
@@ -25,6 +29,7 @@ CMakeFiles/Raytracer.dir/main.cpp.o: ../lightsource.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Raytracer.dir/main.cpp.o: ../main.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../material.h
+CMakeFiles/Raytracer.dir/main.cpp.o: ../mirror.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../onb.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../orthographic_camera.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../perspective_camera.h
@@ -37,6 +42,13 @@ CMakeFiles/Raytracer.dir/main.cpp.o: ../triangle.h
 
 CMakeFiles/Raytracer.dir/material.cpp.o: ../material.cpp
 CMakeFiles/Raytracer.dir/material.cpp.o: ../material.h
+CMakeFiles/Raytracer.dir/material.cpp.o: ../ray.h
+
+CMakeFiles/Raytracer.dir/mirror.cpp.o: ../intersection_record.h
+CMakeFiles/Raytracer.dir/mirror.cpp.o: ../material.h
+CMakeFiles/Raytracer.dir/mirror.cpp.o: ../mirror.cpp
+CMakeFiles/Raytracer.dir/mirror.cpp.o: ../mirror.h
+CMakeFiles/Raytracer.dir/mirror.cpp.o: ../ray.h
 
 CMakeFiles/Raytracer.dir/onb.cpp.o: ../onb.cpp
 CMakeFiles/Raytracer.dir/onb.cpp.o: ../onb.h
@@ -68,6 +80,7 @@ CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../diffuse.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../intersection_record.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../lightsource.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../material.h
+CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../mirror.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../onb.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../primitive.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../ray.h
@@ -81,6 +94,7 @@ CMakeFiles/Raytracer.dir/scene.cpp.o: ../diffuse.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../intersection_record.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../lightsource.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../material.h
+CMakeFiles/Raytracer.dir/scene.cpp.o: ../mirror.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../primitive.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../ray.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../scene.cpp

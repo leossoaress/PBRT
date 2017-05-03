@@ -47,6 +47,8 @@ glm/glm.hpp
 -
 material.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+intersection_record.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
 sstream
 -
 
@@ -65,6 +67,8 @@ glm/glm.hpp
 -
 material.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+intersection_record.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
 
 /home/leo/Documents/UFPB/PBRT/Raytracer/main.cpp
 main.h
@@ -94,6 +98,24 @@ material.h
 
 /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
 glm/glm.hpp
+-
+ray.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
+
+/home/leo/Documents/UFPB/PBRT/Raytracer/mirror.cpp
+mirror.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
+
+/home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
+glm/glm.hpp
+-
+material.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ray.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
+intersection_record.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
+sstream
 -
 
 /home/leo/Documents/UFPB/PBRT/Raytracer/onb.cpp
@@ -163,6 +185,8 @@ scene.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/scene.h
 buffer.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/buffer.h
+onb.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/onb.h
 
 /home/leo/Documents/UFPB/PBRT/Raytracer/scene.cpp
 scene.h
@@ -193,6 +217,8 @@ lightsource.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.h
 diffuse.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.h
+mirror.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
 assimp/Importer.hpp
 -
 assimp/scene.h

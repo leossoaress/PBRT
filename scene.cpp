@@ -34,32 +34,32 @@ void Scene::load( void )
     //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ 0.35f, -0.5f, 0.00f }, 0.1f, new Lightsource( glm::vec3{ 30, 30, 30 }) ) ) );
 
 //Luz
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere( glm::vec3{  0.0f, 1.0f, -1.0f }, 0.5f, new Lightsource(glm::vec3{80.0f, 80.0f, 80.0f} ) ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere( glm::vec3{  0.0f, 1.0f, -1.0f }, 0.5f, new Lightsource(glm::vec3{80.0f, 80.0f, 80.0f} ) ) ) );
 
 //fundo
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , -4.0f}, glm::vec3{3.0f,3.0f,-4.0f}, glm::vec3{3.0f, -3.0f,-4.0f}, new Diffuse(glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , -4.0f}, glm::vec3{3.0f,3.0f,-4.0f}, glm::vec3{3.0f, -3.0f,-4.0f}, new Diffuse(glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
 
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , -4.0f}, glm::vec3{-3.0f,-3.0f,-4.0f}, glm::vec3{3.0f, -3.0f,-4.0f}, new Diffuse (glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , -4.0f}, glm::vec3{-3.0f,-3.0f,-4.0f}, glm::vec3{3.0f, -3.0f,-4.0f}, new Diffuse (glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
 
 //parede direita
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{3.0f ,3.0f , 5.0f}, glm::vec3{3.0f,3.0f,-4.0f}, glm::vec3{3.0f, -3.0f,-4.0f}, new Diffuse (glm::vec3{0.0f, 1.0f , 0.0f} ) ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{3.0f ,3.0f , 5.0f}, glm::vec3{3.0f,3.0f,-4.0f}, glm::vec3{3.0f, -3.0f,-4.0f}, new Diffuse (glm::vec3{1.0f, 0.0f , 0.0f} ) ) ) );
 
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{3.0f ,3.0f , 5.0f}, glm::vec3{3.0f,-3.0f,5.0f}, glm::vec3{3.0f, -3.0f,-4.0f}, new Diffuse (glm::vec3{0.0f, 1.0f , 0.0f} ) ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{3.0f ,3.0f , 5.0f}, glm::vec3{3.0f,-3.0f,5.0f}, glm::vec3{3.0f, -3.0f,-4.0f}, new Diffuse (glm::vec3{1.0f, 0.0f , 0.0f} ) ) ) );
 
 //parede esquerda
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , 5.0f}, glm::vec3{-3.0f,3.0f,-4.0f}, glm::vec3{-3.0f, -3.0f,-4.0f}, new Diffuse (glm::vec3{1.0f, 0.0f , 0.0f} ) ) ) );
+    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-1.0f ,1.0f , -2.0f}, glm::vec3{-3.0f,3.0f,-1.0f}, glm::vec3{-1.0f, -1.0f,-2.0f}, new Mirror() ) ) );
 
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , 5.0f}, glm::vec3{-3.0f,-3.0f,5.0f}, glm::vec3{-3.0f, -3.0f,-4.0f}, new Diffuse (glm::vec3{1.0f, 0.0f , 0.0f} ) ) ) );
+    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-1.0f ,1.0f , -2.0f}, glm::vec3{-3.0f,-3.0f,-2.0f}, glm::vec3{-1.0f, -1.0f,-2.0f}, new Mirror() ) ) );
 
 //teto
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , -4.0f}, glm::vec3{-3.0f,3.0f,4.0f}, glm::vec3{3.0f, 3.0f,4.0f}, new Diffuse (glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , -4.0f}, glm::vec3{-3.0f,3.0f,4.0f}, glm::vec3{3.0f, 3.0f,4.0f}, new Diffuse(glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
 
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , -4.0f}, glm::vec3{3.0f,3.0f,4.0f}, glm::vec3{3.0f, 3.0f,-4.0f}, new Diffuse (glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , -4.0f}, glm::vec3{3.0f,3.0f,4.0f}, glm::vec3{3.0f, 3.0f,-4.0f}, new Diffuse(glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
 
 //chao
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,-3.0f , -4.0f}, glm::vec3{3.0f,-3.0f,-4.0f}, glm::vec3{-3.0f, -3.0f,4.0f}, new Diffuse (glm::vec3{0.2f, 0.2f , 0.2f} ) ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,-3.0f , -4.0f}, glm::vec3{3.0f,-3.0f,-4.0f}, glm::vec3{-3.0f, -3.0f,4.0f}, new Diffuse(glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
 
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{3.0f ,-3.0f , -4.0f}, glm::vec3{3.0f,-3.0f,4.0f}, glm::vec3{-3.0f, -3.0f,4.0f}, new Diffuse (glm::vec3{0.2f, 0.2f , 0.2f} ) ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{3.0f ,-3.0f , -4.0f}, glm::vec3{3.0f,-3.0f,4.0f}, glm::vec3{-3.0f, -3.0f,4.0f}, new Diffuse(glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );
 
 
 }
@@ -90,12 +90,14 @@ void Scene::loadObj(const char* obj)
     {
         aiColor3D diffuseColor = {0,0,0};
         aiColor3D emissiveColor = {0,0,0};
+        aiColor3D reflectiveColor = {0,0,0};
 
 
         if (scene->mMaterials) {
             // Setting up the diffuse and emissive color used by the mesh
             scene->mMaterials[scene->mMeshes[i]->mMaterialIndex]->Get(AI_MATKEY_COLOR_EMISSIVE, emissiveColor);
             scene->mMaterials[scene->mMeshes[i]->mMaterialIndex]->Get(AI_MATKEY_COLOR_DIFFUSE, diffuseColor);
+            scene->mMaterials[scene->mMeshes[i]->mMaterialIndex]->Get(AI_MATKEY_COLOR_REFLECTIVE, reflectiveColor);
         }
 
 
@@ -127,8 +129,11 @@ void Scene::loadObj(const char* obj)
             zi3 = (float)scene->mMeshes[i]->mVertices[i3].z;
             glm::vec3 vertice3{ xi3,yi3,zi3 };
 
-
-            if( emissiveColor.r == 0 &&  emissiveColor.g == 0 && emissiveColor.b == 0 )
+            if(emissiveColor.r == 0 &&  emissiveColor.g == 0 && emissiveColor.b == 0 && diffuseColor.r == 0 && diffuseColor.g == 0 && diffuseColor.b==0 )
+            {
+                primitives_.push_back(Primitive::PrimitiveUniquePtr(new Triangle(  vertice1, vertice2,  vertice3, new Mirror ()  ) ) );
+            }
+            else if( emissiveColor.r == 0 &&  emissiveColor.g == 0 && emissiveColor.b == 0)
             {
                 //std::printf("Difuso\n");
                 glm::vec3 a = {diffuseColor.r, diffuseColor.g, diffuseColor.b};

@@ -20,3 +20,8 @@ glm::vec3 Lightsource::get_emitancia() const
 {
     return emitancia_;
 }
+
+int Lightsource::get_tipo() const
+{
+    return 1;
+}

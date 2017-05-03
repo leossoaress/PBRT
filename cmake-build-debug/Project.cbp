@@ -123,6 +123,12 @@
 		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/material.h">
 			<Option target="Raytracer"/>
 		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/mirror.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h">
+			<Option target="Raytracer"/>
+		</Unit>
 		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/onb.cpp">
 			<Option target="Raytracer"/>
 		</Unit>

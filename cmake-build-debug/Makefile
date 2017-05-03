@@ -285,6 +285,33 @@ material.cpp.s:
 	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/material.cpp.s
 .PHONY : material.cpp.s
 
+mirror.o: mirror.cpp.o
+
+.PHONY : mirror.o
+
+# target to build an object file
+mirror.cpp.o:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/mirror.cpp.o
+.PHONY : mirror.cpp.o
+
+mirror.i: mirror.cpp.i
+
+.PHONY : mirror.i
+
+# target to preprocess a source file
+mirror.cpp.i:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/mirror.cpp.i
+.PHONY : mirror.cpp.i
+
+mirror.s: mirror.cpp.s
+
+.PHONY : mirror.s
+
+# target to generate assembly for a file
+mirror.cpp.s:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/mirror.cpp.s
+.PHONY : mirror.cpp.s
+
 onb.o: onb.cpp.o
 
 .PHONY : onb.o
@@ -555,6 +582,9 @@ help:
 	@echo "... material.o"
 	@echo "... material.i"
 	@echo "... material.s"
+	@echo "... mirror.o"
+	@echo "... mirror.i"
+	@echo "... mirror.s"
 	@echo "... onb.o"
 	@echo "... onb.i"
 	@echo "... onb.s"

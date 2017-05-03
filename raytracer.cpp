@@ -30,11 +30,30 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
 
         if ( scene_.intersect( ray, intersection_record ) )
         {
-            refl_ray = get_new_ray( intersection_record);
 
-            Lo =  intersection_record.material_->get_emitancia() + 2.0f * PI *
-                                                                   intersection_record.material_->get_BRDF() *
-                                                                   L( refl_ray, ++curr_depth ) * glm::dot(intersection_record.normal_, refl_ray.direction_);
+            if(intersection_record.material_->get_tipo() == 1 || intersection_record.material_->get_tipo() == 0)
+            {
+                refl_ray = get_new_ray(intersection_record);
+
+                Lo = intersection_record.material_->get_emitancia() + 2.0f * PI *
+                     intersection_record.material_->get_BRDF() *
+                     L(refl_ray, ++curr_depth) *
+                     glm::dot(intersection_record.normal_, refl_ray.direction_);
+            }
+            else
+            {
+                ONB onb_;
+
+                onb_.setFromV(intersection_record.normal_);
+
+                glm::vec3 d =  glm::vec3 {ray.direction_.x, -ray.direction_.y, ray.direction_.z};
+
+                refl_ray.origin_ = intersection_record.position_ + (intersection_record.normal_*0.001f);
+
+                refl_ray.direction_ =  d;
+
+                Lo = L(refl_ray, ++curr_depth);
+            }
         }
     }
 

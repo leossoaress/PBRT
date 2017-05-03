@@ -1,17 +1,18 @@
-#ifndef LIGHTSOURCE_H_
-#define LIGHTSOURCE_H_
+#ifndef PROJECT_MIRROR_H
+#define PROJECT_MIRROR_H
+
 
 #include <glm/glm.hpp>
 #include "material.h"
+#include "ray.h"
 #include "intersection_record.h"
+#include <sstream>
 
-class Lightsource : public Material
+class Mirror : public Material
 {
 public:
 
-    //Lightsource ( void );
-
-    Lightsource( const glm::vec3 emitancia);
+    Mirror();
 
     glm::vec3 get_BRDF () const;
     glm::vec3 get_emitancia () const;
@@ -19,5 +20,4 @@ public:
     int get_tipo() const;
 
 };
-
-#endif
+#endif //PROJECT_MIRROR_H

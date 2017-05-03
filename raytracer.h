@@ -8,6 +8,7 @@
 #include "camera.h"
 #include "scene.h"
 #include "buffer.h"
+#include "onb.h"
 
 class RayTracer
 {
@@ -30,7 +31,7 @@ public:
 
     void integrate2(size_t inicio1, size_t final1);
 
-    float number_rays = 100;
+    float number_rays = 50;
     int numero_threads=4;
 
 

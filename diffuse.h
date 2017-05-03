@@ -3,18 +3,19 @@
 
 #include <glm/glm.hpp>
 #include "material.h"
+#include "intersection_record.h"
 #include <sstream>
 
 class Diffuse : public Material
 {
 public:
 
-    //Diffuse ( void );
-
     Diffuse( const glm::vec3 cor);
 
     glm::vec3 get_BRDF () const;
     glm::vec3 get_emitancia () const;
+
+    int get_tipo() const;
 
 };
 

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/lightsource.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/main.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/main.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/material.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/material.cpp.o"
+  "/home/leo/Documents/UFPB/PBRT/Raytracer/mirror.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/mirror.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/onb.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/onb.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/orthographic_camera.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/orthographic_camera.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/perspective_camera.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/perspective_camera.cpp.o"

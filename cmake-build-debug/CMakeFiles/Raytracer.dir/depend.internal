@@ -12,11 +12,15 @@ CMakeFiles/Raytracer.dir/camera.cpp.o
 CMakeFiles/Raytracer.dir/diffuse.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.cpp
  /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
 CMakeFiles/Raytracer.dir/lightsource.cpp.o
+ /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.cpp
  /home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
 CMakeFiles/Raytracer.dir/main.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/buffer.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/camera.h
@@ -26,6 +30,7 @@ CMakeFiles/Raytracer.dir/main.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/main.cpp
  /home/leo/Documents/UFPB/PBRT/Raytracer/main.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/onb.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/orthographic_camera.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/perspective_camera.h
@@ -38,6 +43,13 @@ CMakeFiles/Raytracer.dir/main.cpp.o
 CMakeFiles/Raytracer.dir/material.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/material.cpp
  /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
+CMakeFiles/Raytracer.dir/mirror.cpp.o
+ /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/mirror.cpp
+ /home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
 CMakeFiles/Raytracer.dir/onb.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/onb.cpp
  /home/leo/Documents/UFPB/PBRT/Raytracer/onb.h
@@ -69,6 +81,7 @@ CMakeFiles/Raytracer.dir/raytracer.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/onb.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/primitive.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
@@ -82,6 +95,7 @@ CMakeFiles/Raytracer.dir/scene.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/primitive.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/scene.cpp
