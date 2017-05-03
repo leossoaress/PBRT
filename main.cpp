@@ -22,7 +22,7 @@ int main( void )
     Scene scene{};
 
     char obj[25] = "CornellBox-Original.obj";
-    //scene.load();
+    scene.load();
     scene.loadObj(obj);
 
     Buffer rendering_buffer{ x_resolution, y_resolution };

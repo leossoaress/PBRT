@@ -31,7 +31,7 @@ void Scene::load( void )
 {
 
     //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ -0.35f, -0.5f, 0.00f }, 0.1f,  new Lightsource( glm::vec3{ 30, 30, 30 }) ) ) );
-    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ 0.35f, -0.5f, 0.00f }, 0.1f, new Lightsource( glm::vec3{ 30, 30, 30 }) ) ) );
+    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ 0.3f, 1.1f, 0.5f }, 0.2f, new SmoothDielectric() ) ) );
 
 //Luz
     //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere( glm::vec3{  0.0f, 1.0f, -1.0f }, 0.5f, new Lightsource(glm::vec3{80.0f, 80.0f, 80.0f} ) ) ) );
@@ -47,9 +47,9 @@ void Scene::load( void )
     //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{3.0f ,3.0f , 5.0f}, glm::vec3{3.0f,-3.0f,5.0f}, glm::vec3{3.0f, -3.0f,-4.0f}, new Diffuse (glm::vec3{1.0f, 0.0f , 0.0f} ) ) ) );
 
 //parede esquerda
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-1.0f ,1.0f , -2.0f}, glm::vec3{-3.0f,3.0f,-1.0f}, glm::vec3{-1.0f, -1.0f,-2.0f}, new Mirror() ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-1.0f ,1.0f , -2.0f}, glm::vec3{-3.0f,3.0f,-1.0f}, glm::vec3{-1.0f, -1.0f,-2.0f}, new Mirror() ) ) );
 
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-1.0f ,1.0f , -2.0f}, glm::vec3{-3.0f,-3.0f,-2.0f}, glm::vec3{-1.0f, -1.0f,-2.0f}, new Mirror() ) ) );
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-1.0f ,1.0f , -2.0f}, glm::vec3{-3.0f,-3.0f,-2.0f}, glm::vec3{-1.0f, -1.0f,-2.0f}, new Mirror() ) ) );
 
 //teto
     //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Triangle( glm::vec3{-3.0f ,3.0f , -4.0f}, glm::vec3{-3.0f,3.0f,4.0f}, glm::vec3{3.0f, 3.0f,4.0f}, new Diffuse(glm::vec3{0.9f, 0.89f , 0.24f} ) ) ) );

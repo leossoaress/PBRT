@@ -25,3 +25,8 @@ int Lightsource::get_tipo() const
 {
     return 1;
 }
+
+float Lightsource::get_n() const
+{
+    return 1.0;
+}

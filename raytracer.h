@@ -4,6 +4,7 @@
 #include <sstream>
 #include <iomanip>
 #include <cmath>
+#include <math.h>
 
 #include "camera.h"
 #include "scene.h"
@@ -29,9 +30,13 @@ public:
 
     Ray get_new_ray(IntersectionRecord &intersection_record);
 
+    Ray get_new_ray_refracted(Ray ray, IntersectionRecord &intersection_record, float n1, float n2, float a);
+
     void integrate2(size_t inicio1, size_t final1);
 
-    float number_rays = 50;
+    float function_fresnel(float n1, float n2, IntersectionRecord &intersection_record, Ray ray);
+
+    float number_rays = 500;
     int numero_threads=4;
 
 

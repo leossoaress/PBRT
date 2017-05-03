@@ -19,6 +19,7 @@ public:
     virtual glm::vec3 get_emitancia() const = 0;
 
     virtual int get_tipo() const = 0;
+    virtual float get_n() const = 0;
 
     glm::vec3 emitancia_;
     glm::vec3 BRDF_;

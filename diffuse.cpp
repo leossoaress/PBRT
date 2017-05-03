@@ -24,3 +24,8 @@ int Diffuse::get_tipo() const
 {
     return 0;
 }
+
+float Diffuse::get_n() const
+{
+    return 1.0;
+}

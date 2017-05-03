@@ -26,3 +26,8 @@ int Mirror::get_tipo() const
 {
     return 2;
 }
+
+float Mirror::get_n() const
+{
+    return 1.0;
+}

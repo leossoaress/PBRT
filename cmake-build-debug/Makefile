@@ -501,6 +501,33 @@ scene.cpp.s:
 	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/scene.cpp.s
 .PHONY : scene.cpp.s
 
+smooth_dielectric.o: smooth_dielectric.cpp.o
+
+.PHONY : smooth_dielectric.o
+
+# target to build an object file
+smooth_dielectric.cpp.o:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o
+.PHONY : smooth_dielectric.cpp.o
+
+smooth_dielectric.i: smooth_dielectric.cpp.i
+
+.PHONY : smooth_dielectric.i
+
+# target to preprocess a source file
+smooth_dielectric.cpp.i:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.i
+.PHONY : smooth_dielectric.cpp.i
+
+smooth_dielectric.s: smooth_dielectric.cpp.s
+
+.PHONY : smooth_dielectric.s
+
+# target to generate assembly for a file
+smooth_dielectric.cpp.s:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.s
+.PHONY : smooth_dielectric.cpp.s
+
 sphere.o: sphere.cpp.o
 
 .PHONY : sphere.o
@@ -606,6 +633,9 @@ help:
 	@echo "... scene.o"
 	@echo "... scene.i"
 	@echo "... scene.s"
+	@echo "... smooth_dielectric.o"
+	@echo "... smooth_dielectric.i"
+	@echo "... smooth_dielectric.s"
 	@echo "... sphere.o"
 	@echo "... sphere.i"
 	@echo "... sphere.s"

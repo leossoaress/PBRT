@@ -171,6 +171,12 @@
 		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/scene.h">
 			<Option target="Raytracer"/>
 		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h">
+			<Option target="Raytracer"/>
+		</Unit>
 		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/sphere.cpp">
 			<Option target="Raytracer"/>
 		</Unit>

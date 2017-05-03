@@ -38,6 +38,7 @@ CMakeFiles/Raytracer.dir/main.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/raytracer.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/scene.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/sphere.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/triangle.h
 CMakeFiles/Raytracer.dir/material.cpp.o
@@ -88,6 +89,7 @@ CMakeFiles/Raytracer.dir/raytracer.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/raytracer.cpp
  /home/leo/Documents/UFPB/PBRT/Raytracer/raytracer.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/scene.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/sphere.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/triangle.h
 CMakeFiles/Raytracer.dir/scene.cpp.o
@@ -100,8 +102,15 @@ CMakeFiles/Raytracer.dir/scene.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/scene.cpp
  /home/leo/Documents/UFPB/PBRT/Raytracer/scene.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/sphere.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/triangle.h
+CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o
+ /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.cpp
+ /home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h
 CMakeFiles/Raytracer.dir/sphere.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/material.h

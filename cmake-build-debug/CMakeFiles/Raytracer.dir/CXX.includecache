@@ -179,6 +179,8 @@ iomanip
 -
 cmath
 -
+math.h
+-
 camera.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/camera.h
 scene.h
@@ -219,6 +221,8 @@ diffuse.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.h
 mirror.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
+smooth_dielectric.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h
 assimp/Importer.hpp
 -
 assimp/scene.h
@@ -226,6 +230,22 @@ assimp/scene.h
 assimp/postprocess.h
 -
 assimp/vector3.h
+-
+
+/home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.cpp
+smooth_dielectric.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h
+
+/home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h
+glm/glm.hpp
+-
+material.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ray.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
+intersection_record.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
+sstream
 -
 
 /home/leo/Documents/UFPB/PBRT/Raytracer/sphere.cpp

@@ -37,6 +37,7 @@ CMakeFiles/Raytracer.dir/main.cpp.o: ../primitive.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../ray.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../raytracer.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../scene.h
+CMakeFiles/Raytracer.dir/main.cpp.o: ../smooth_dielectric.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../sphere.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../triangle.h
 
@@ -87,6 +88,7 @@ CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../ray.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../raytracer.cpp
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../raytracer.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../scene.h
+CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../smooth_dielectric.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../sphere.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../triangle.h
 
@@ -99,8 +101,15 @@ CMakeFiles/Raytracer.dir/scene.cpp.o: ../primitive.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../ray.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../scene.cpp
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../scene.h
+CMakeFiles/Raytracer.dir/scene.cpp.o: ../smooth_dielectric.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../sphere.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../triangle.h
+
+CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o: ../intersection_record.h
+CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o: ../material.h
+CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o: ../ray.h
+CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o: ../smooth_dielectric.cpp
+CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o: ../smooth_dielectric.h
 
 CMakeFiles/Raytracer.dir/sphere.cpp.o: ../intersection_record.h
 CMakeFiles/Raytracer.dir/sphere.cpp.o: ../material.h

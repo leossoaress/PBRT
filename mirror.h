@@ -19,5 +19,7 @@ public:
 
     int get_tipo() const;
 
+    float get_n() const;
+
 };
 #endif //PROJECT_MIRROR_H

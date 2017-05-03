@@ -16,6 +16,7 @@ public:
     glm::vec3 get_emitancia () const;
 
     int get_tipo() const;
+    float get_n() const;
 
 };
 
