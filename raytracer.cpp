@@ -42,9 +42,6 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
             }
             else
             {
-                ONB onb_;
-
-                onb_.setFromV(intersection_record.normal_);
 
                 glm::vec3 d =  glm::vec3 {ray.direction_.x, -ray.direction_.y, ray.direction_.z};
 
