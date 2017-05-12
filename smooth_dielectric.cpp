@@ -29,5 +29,5 @@ int SmoothDielectric::get_tipo() const
 
 float SmoothDielectric::get_n() const
 {
-    return 1.3;
+    return 1.1;
 }

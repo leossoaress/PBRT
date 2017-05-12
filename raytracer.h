@@ -10,6 +10,7 @@
 #include "scene.h"
 #include "buffer.h"
 #include "onb.h"
+#include "mirror.h"
 
 class RayTracer
 {
@@ -32,11 +33,13 @@ public:
 
     Ray get_new_ray_refracted(Ray ray, IntersectionRecord &intersection_record, float n1, float n2, float a);
 
+    Ray getnwerayreflected(Ray ray_origin, IntersectionRecord &intersection_record);
+
     void integrate2(size_t inicio1, size_t final1);
 
     float function_fresnel(float n1, float n2, IntersectionRecord &intersection_record, Ray ray);
 
-    float number_rays = 500;
+    float number_rays = 100;
     int numero_threads=4;
 
 

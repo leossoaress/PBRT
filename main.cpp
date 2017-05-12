@@ -8,8 +8,8 @@ int main( void )
     long seconds, minutes_final=0, seconds_final=0, hours_final=0;
     gettimeofday(&start, NULL);
 
-    unsigned int x_resolution = 512;
-    unsigned int y_resolution = 512;
+    unsigned int x_resolution = 1024;
+    unsigned int y_resolution = 1024;
 
     PerspectiveCamera camera{ -1.25f,
                               1.25f,

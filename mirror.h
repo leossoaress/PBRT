@@ -6,6 +6,7 @@
 #include "material.h"
 #include "ray.h"
 #include "intersection_record.h"
+#include "onb.h"
 #include <sstream>
 
 class Mirror : public Material

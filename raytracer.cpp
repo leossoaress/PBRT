@@ -24,7 +24,7 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
 
     Ray refl_ray;
 
-    if ( curr_depth < 5 ) {
+    if ( curr_depth < 8 ) {
         intersection_record.t_ = std::numeric_limits<double>::max();
 
         if (scene_.intersect(ray, intersection_record))
@@ -34,56 +34,33 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
                 refl_ray = get_new_ray(intersection_record);
 
                 Lo = intersection_record.material_->get_emitancia() + 2.0f * PI *
-                                                                      intersection_record.material_->get_BRDF() *
-                                                                      L(refl_ray, ++curr_depth) *
-                                                                      glm::dot(intersection_record.normal_,
-                                                                               refl_ray.direction_);
+                     intersection_record.material_->get_BRDF() *
+                     L(refl_ray, ++curr_depth) *
+                     glm::dot(intersection_record.normal_,
+                     refl_ray.direction_);
             }
 
             else if(intersection_record.material_->get_tipo() == 2)
             {
-                ONB onb_;
-
-                onb_.setFromV(intersection_record.normal_);
-
-                glm::vec3 d = glm::transpose(onb_.getBasisMatrix()) * ray.direction_;
-
-                d.y = -d.y;
-
-                refl_ray.origin_ = intersection_record.position_ + (intersection_record.normal_ * 0.001f);
-
-                refl_ray.direction_ = glm::normalize(onb_.getBasisMatrix() * d);
+                refl_ray = getnwerayreflected(ray,intersection_record);
 
                 Lo = L(refl_ray, ++curr_depth);
             }
 
-            else
+            else // vidro
             {
-                if (glm::dot(intersection_record.normal_, ray.direction_) < 0)
+                if (glm::dot(intersection_record.normal_, ray.direction_) < 0) //entrando do vidro
                 {
                     float n1 = 1;
                     float n2 = intersection_record.material_->get_n();
 
                     float fresnel = function_fresnel(n1, n2, intersection_record, ray);
 
-                    //std::cout << "Fresnel: " << fresnel << std::endl;
-
                     float r1 = ((double) rand() / (RAND_MAX));
 
                     if (fresnel > r1)
                     {
-
-                        ONB onb_;
-
-                        onb_.setFromV(intersection_record.normal_);
-
-                        glm::vec3 d = glm::transpose(onb_.getBasisMatrix()) * ray.direction_;
-
-                        d.y = -d.y;
-
-                        refl_ray.origin_ = intersection_record.position_ + (intersection_record.normal_ * 0.001f);
-
-                        refl_ray.direction_ = glm::normalize(onb_.getBasisMatrix() * d);
+                        refl_ray = getnwerayreflected(ray,intersection_record);
 
                         Lo = L(refl_ray, ++curr_depth);
                     }
@@ -96,47 +73,26 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
                         Lo = L(refl_ray, ++curr_depth);
                     }
                 }
-                else
+                else // saindo do virdro
                 {
                     float n1 = intersection_record.material_->get_n();
                     float n2 = 1;
 
 
                     float fresnel = function_fresnel(n1, n2, intersection_record, ray);
-                    //std::cout << "Fresnel: " << fresnel << std::endl;
 
                     float r1 = ((double) rand() / (RAND_MAX));
 
                     if (fresnel == 1)
                     {
-                        ONB onb_;
-
-                        onb_.setFromV(intersection_record.normal_);
-
-                        glm::vec3 d = glm::transpose(onb_.getBasisMatrix()) * ray.direction_;
-
-                        d.y = -d.y;
-
-                        refl_ray.origin_ = intersection_record.position_ + (intersection_record.normal_ * 0.001f);
-
-                        refl_ray.direction_ = glm::normalize(onb_.getBasisMatrix() * d);
+                        refl_ray = getnwerayreflected(ray,intersection_record);
 
                         Lo = L(refl_ray, ++curr_depth);
                     }
 
                     else if (fresnel > r1)
                     {
-                        ONB onb_;
-
-                        onb_.setFromV(intersection_record.normal_);
-
-                        glm::vec3 d = glm::transpose(onb_.getBasisMatrix()) * ray.direction_;
-
-                        d.y = -d.y;
-
-                        refl_ray.origin_ = intersection_record.position_ + (intersection_record.normal_ * 0.001f);
-
-                        refl_ray.direction_ = glm::normalize(onb_.getBasisMatrix() * d);
+                        refl_ray = getnwerayreflected(ray,intersection_record);
 
                         Lo = L(refl_ray, ++curr_depth);
                     }
@@ -157,6 +113,24 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
     return Lo;
 }
 
+Ray RayTracer::getnwerayreflected(Ray ray_origin, IntersectionRecord &intersection_record)
+{
+    Ray refl_ray;
+
+    ONB onb_;
+
+    onb_.setFromV(intersection_record.normal_);
+
+    glm::vec3 d = glm::transpose(onb_.getBasisMatrix()) * ray_origin.direction_;
+
+    d.y = -d.y;
+
+    refl_ray.origin_ = intersection_record.position_ + (intersection_record.normal_ * 0.001f);
+
+    refl_ray.direction_ = glm::normalize(onb_.getBasisMatrix() * d);
+
+    return refl_ray;
+}
 
 Ray RayTracer::get_new_ray_refracted(Ray ray, IntersectionRecord &intersection_record, float n1, float n2, float a)
 {
@@ -185,17 +159,17 @@ float RayTracer::function_fresnel(float n1, float n2, IntersectionRecord &inters
     if(n1>n2)
     {
         float n = n1/n2;
-        float cos1 = -glm::dot(intersection_record.normal_, ray.direction_);
+        float cos1 = glm::dot(intersection_record.normal_, ray.direction_);
 
-        float a = n*n*(1 - cos1*cos1);
+        float a = n*n*(1.0 - cos1*cos1);
 
-        if(a>1)             //TI
+        if(a>1)             //TIR
             return 1;
 
-        cosx = sqrt(1.0 - a);
+        cosx = sqrt(1 - a);
     }
 
-    const float x = 1.0 - cosx;
+    float x = 1.0 - cosx;
 
     return r0 + (1.0 - r0) * x * x * x * x * x;
 }

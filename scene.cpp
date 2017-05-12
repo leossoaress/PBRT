@@ -30,8 +30,8 @@ bool Scene::intersect( const Ray &ray,
 void Scene::load( void )
 {
 
-    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ -0.35f, -0.5f, 0.00f }, 0.1f,  new Lightsource( glm::vec3{ 30, 30, 30 }) ) ) );
-    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ 0.0f, 0.3f, 0.5f }, 0.3f, new SmoothDielectric() ) ) );
+    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ -0.5f, 0.5f, 0.5f }, 0.3f,  new Mirror() ) ) );
+    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ 0.5f, 0.5f, 0.5f }, 0.3f, new SmoothDielectric() ) ) );
 
 //Luz
     //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere( glm::vec3{  0.0f, 1.0f, -1.0f }, 0.5f, new Lightsource(glm::vec3{80.0f, 80.0f, 80.0f} ) ) ) );
