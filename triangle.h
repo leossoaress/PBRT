@@ -14,8 +14,7 @@ public:
 
     Triangle( const glm::vec3 &aa, const glm::vec3 &bb, const glm::vec3 &cc, Material* material);
 
-
-    //glm::vec3 corin = glm::vec3(rand()%256/255.0f, rand()%256/255.0f, rand()%256/255.0f;
+    BBox getAABB( void ) const;
 
     bool intersect( const Ray &ray,
                     IntersectionRecord &intersection_record ) const;

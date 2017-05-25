@@ -465,6 +465,78 @@ CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o.provides: CMakeFiles/Raytracer.
 CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o.provides.build: CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o
 
 
+CMakeFiles/Raytracer.dir/bbox.cpp.o: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/bbox.cpp.o: ../bbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Raytracer.dir/bbox.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Raytracer.dir/bbox.cpp.o -c /home/leo/Documents/UFPB/PBRT/Raytracer/bbox.cpp
+
+CMakeFiles/Raytracer.dir/bbox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/bbox.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leo/Documents/UFPB/PBRT/Raytracer/bbox.cpp > CMakeFiles/Raytracer.dir/bbox.cpp.i
+
+CMakeFiles/Raytracer.dir/bbox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/bbox.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/Documents/UFPB/PBRT/Raytracer/bbox.cpp -o CMakeFiles/Raytracer.dir/bbox.cpp.s
+
+CMakeFiles/Raytracer.dir/bbox.cpp.o.requires:
+
+.PHONY : CMakeFiles/Raytracer.dir/bbox.cpp.o.requires
+
+CMakeFiles/Raytracer.dir/bbox.cpp.o.provides: CMakeFiles/Raytracer.dir/bbox.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/bbox.cpp.o.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/bbox.cpp.o.provides
+
+CMakeFiles/Raytracer.dir/bbox.cpp.o.provides.build: CMakeFiles/Raytracer.dir/bbox.cpp.o
+
+
+CMakeFiles/Raytracer.dir/bvh.cpp.o: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/bvh.cpp.o: ../bvh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Raytracer.dir/bvh.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Raytracer.dir/bvh.cpp.o -c /home/leo/Documents/UFPB/PBRT/Raytracer/bvh.cpp
+
+CMakeFiles/Raytracer.dir/bvh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/bvh.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leo/Documents/UFPB/PBRT/Raytracer/bvh.cpp > CMakeFiles/Raytracer.dir/bvh.cpp.i
+
+CMakeFiles/Raytracer.dir/bvh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/bvh.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/Documents/UFPB/PBRT/Raytracer/bvh.cpp -o CMakeFiles/Raytracer.dir/bvh.cpp.s
+
+CMakeFiles/Raytracer.dir/bvh.cpp.o.requires:
+
+.PHONY : CMakeFiles/Raytracer.dir/bvh.cpp.o.requires
+
+CMakeFiles/Raytracer.dir/bvh.cpp.o.provides: CMakeFiles/Raytracer.dir/bvh.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/bvh.cpp.o.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/bvh.cpp.o.provides
+
+CMakeFiles/Raytracer.dir/bvh.cpp.o.provides.build: CMakeFiles/Raytracer.dir/bvh.cpp.o
+
+
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o: ../cook_torrance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Raytracer.dir/cook_torrance.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Raytracer.dir/cook_torrance.cpp.o -c /home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.cpp
+
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/cook_torrance.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.cpp > CMakeFiles/Raytracer.dir/cook_torrance.cpp.i
+
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/cook_torrance.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.cpp -o CMakeFiles/Raytracer.dir/cook_torrance.cpp.s
+
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o.requires:
+
+.PHONY : CMakeFiles/Raytracer.dir/cook_torrance.cpp.o.requires
+
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o.provides: CMakeFiles/Raytracer.dir/cook_torrance.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/cook_torrance.cpp.o.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/cook_torrance.cpp.o.provides
+
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o.provides.build: CMakeFiles/Raytracer.dir/cook_torrance.cpp.o
+
+
 # Object files for target Raytracer
 Raytracer_OBJECTS = \
 "CMakeFiles/Raytracer.dir/main.cpp.o" \
@@ -483,7 +555,10 @@ Raytracer_OBJECTS = \
 "CMakeFiles/Raytracer.dir/sphere.cpp.o" \
 "CMakeFiles/Raytracer.dir/triangle.cpp.o" \
 "CMakeFiles/Raytracer.dir/mirror.cpp.o" \
-"CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o"
+"CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o" \
+"CMakeFiles/Raytracer.dir/bbox.cpp.o" \
+"CMakeFiles/Raytracer.dir/bvh.cpp.o" \
+"CMakeFiles/Raytracer.dir/cook_torrance.cpp.o"
 
 # External object files for target Raytracer
 Raytracer_EXTERNAL_OBJECTS =
@@ -505,9 +580,12 @@ Raytracer: CMakeFiles/Raytracer.dir/sphere.cpp.o
 Raytracer: CMakeFiles/Raytracer.dir/triangle.cpp.o
 Raytracer: CMakeFiles/Raytracer.dir/mirror.cpp.o
 Raytracer: CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o
+Raytracer: CMakeFiles/Raytracer.dir/bbox.cpp.o
+Raytracer: CMakeFiles/Raytracer.dir/bvh.cpp.o
+Raytracer: CMakeFiles/Raytracer.dir/cook_torrance.cpp.o
 Raytracer: CMakeFiles/Raytracer.dir/build.make
 Raytracer: CMakeFiles/Raytracer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Raytracer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Raytracer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Raytracer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -532,6 +610,9 @@ CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sphere.cpp.o.require
 CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/triangle.cpp.o.requires
 CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/mirror.cpp.o.requires
 CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/smooth_dielectric.cpp.o.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/bbox.cpp.o.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/bvh.cpp.o.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/cook_torrance.cpp.o.requires
 
 .PHONY : CMakeFiles/Raytracer.dir/requires
 

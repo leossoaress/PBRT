@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/leo/Documents/UFPB/PBRT/Raytracer/bbox.cpp
+bbox.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/bbox.h
+
+/home/leo/Documents/UFPB/PBRT/Raytracer/bbox.h
+glm/glm.hpp
+-
+ray.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
+intersection_record.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
+
 /home/leo/Documents/UFPB/PBRT/Raytracer/buffer.cpp
 buffer.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/buffer.h
@@ -21,6 +33,28 @@ vector
 -
 glm/glm.hpp
 -
+
+/home/leo/Documents/UFPB/PBRT/Raytracer/bvh.cpp
+bvh.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/bvh.h
+
+/home/leo/Documents/UFPB/PBRT/Raytracer/bvh.h
+sstream
+-
+iostream
+-
+iomanip
+-
+deque
+-
+queue
+-
+algorithm
+-
+primitive.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/primitive.h
+bbox.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/bbox.h
 
 /home/leo/Documents/UFPB/PBRT/Raytracer/camera.cpp
 camera.h
@@ -115,6 +149,8 @@ ray.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
 intersection_record.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
+onb.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/onb.h
 sstream
 -
 
@@ -157,6 +193,8 @@ ray.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
 intersection_record.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
+bbox.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/bbox.h
 
 /home/leo/Documents/UFPB/PBRT/Raytracer/ray.cpp
 ray.h
@@ -189,6 +227,8 @@ buffer.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/buffer.h
 onb.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/onb.h
+mirror.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
 
 /home/leo/Documents/UFPB/PBRT/Raytracer/scene.cpp
 scene.h
@@ -223,6 +263,8 @@ mirror.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/mirror.h
 smooth_dielectric.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h
+bvh.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/bvh.h
 assimp/Importer.hpp
 -
 assimp/scene.h

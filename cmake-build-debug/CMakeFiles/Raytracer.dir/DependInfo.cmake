@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/leo/Documents/UFPB/PBRT/Raytracer/bbox.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/bbox.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/buffer.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/buffer.cpp.o"
+  "/home/leo/Documents/UFPB/PBRT/Raytracer/bvh.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/bvh.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/camera.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/camera.cpp.o"
+  "/home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/cook_torrance.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/diffuse.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/lightsource.cpp.o"
   "/home/leo/Documents/UFPB/PBRT/Raytracer/main.cpp" "/home/leo/Documents/UFPB/PBRT/Raytracer/cmake-build-debug/CMakeFiles/Raytracer.dir/main.cpp.o"

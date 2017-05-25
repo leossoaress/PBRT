@@ -84,16 +84,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/bbox.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/bbox.h">
+			<Option target="Raytracer"/>
+		</Unit>
 		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/buffer.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
 		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/buffer.h">
 			<Option target="Raytracer"/>
 		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/bvh.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/bvh.h">
+			<Option target="Raytracer"/>
+		</Unit>
 		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/camera.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
 		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/camera.h">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.cpp">
+			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.h">
 			<Option target="Raytracer"/>
 		</Unit>
 		<Unit filename="/home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.cpp">

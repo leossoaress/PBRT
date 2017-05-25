@@ -15,6 +15,7 @@
 #include "diffuse.h"
 #include "mirror.h"
 #include "smooth_dielectric.h"
+#include "bvh.h"
 
 #include <assimp/Importer.hpp>      // C++ importer interface
 #include <assimp/scene.h>           // Output data structure
@@ -25,19 +26,39 @@ class Scene
 {
 public:
 
+    enum AccelerationStructure
+    {
+        NONE,
+        BVH_SAH
+    };
+
     Scene( void );
 
     ~Scene( void );
 
-    bool intersect( const Ray &ray,
-                    IntersectionRecord &intersection_record ) const;
+    //bool intersect( const Ray &ray, IntersectionRecord &intersection_record ) const;
+
+    void buildAccelerationStructure( void );
+
+    bool intersect( const Ray &ray, IntersectionRecord &intersection_record) const;
 
     void load( void );
 
     void loadObj(const char* objFile);
 
+    void loadObj(const char* obj, glm::vec3 cor);
+
     std::vector< Primitive::PrimitiveUniquePtr > primitives_;
 
+    AccelerationStructure acceleration_structure_ = AccelerationStructure::NONE;
+
+private:
+
+    void buildBVH( void );
+
+    const aiScene *assimp_scene_ = nullptr;
+
+    const BVH *bvh_ = nullptr;
 };
 
 #endif /* SCENE_H_ */

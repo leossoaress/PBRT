@@ -47,3 +47,13 @@ bool Sphere::intersect( const Ray &ray,
 
     return true;
 }
+
+BBox Sphere::getAABB( void ) const
+{
+    BBox aabb;
+
+    aabb.min_ = center_ - radius_;
+    aabb.max_ = center_ + radius_;
+    aabb.centroid_ = center_;
+    return aabb;
+}

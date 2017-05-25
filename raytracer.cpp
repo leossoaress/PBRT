@@ -24,13 +24,14 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
 
     Ray refl_ray;
 
-    if ( curr_depth < 8 ) {
+    if ( curr_depth < 5 ) {
         intersection_record.t_ = std::numeric_limits<double>::max();
 
         if (scene_.intersect(ray, intersection_record))
         {
 
-            if (intersection_record.material_->get_tipo() == 1 || intersection_record.material_->get_tipo() == 0) {
+            if (intersection_record.material_->get_tipo() == 1 || intersection_record.material_->get_tipo() == 0) //difuso e lightsource
+            {
                 refl_ray = get_new_ray(intersection_record);
 
                 Lo = intersection_record.material_->get_emitancia() + 2.0f * PI *

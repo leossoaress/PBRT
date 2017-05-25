@@ -5,6 +5,7 @@
 
 #include "ray.h"
 #include "intersection_record.h"
+#include "bbox.h"
 
 class Primitive
 {
@@ -19,8 +20,9 @@ public:
 
     virtual ~Primitive( void );
 
-    virtual bool intersect( const Ray &ray,
-                            IntersectionRecord &intersection_record ) const = 0;
+    virtual bool intersect( const Ray &ray, IntersectionRecord &intersection_record ) const = 0;
+
+    virtual BBox getAABB( void ) const = 0;
 
     Material* material_;
 

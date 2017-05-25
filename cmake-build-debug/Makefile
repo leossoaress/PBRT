@@ -123,6 +123,33 @@ Raytracer/fast:
 	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/build
 .PHONY : Raytracer/fast
 
+bbox.o: bbox.cpp.o
+
+.PHONY : bbox.o
+
+# target to build an object file
+bbox.cpp.o:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/bbox.cpp.o
+.PHONY : bbox.cpp.o
+
+bbox.i: bbox.cpp.i
+
+.PHONY : bbox.i
+
+# target to preprocess a source file
+bbox.cpp.i:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/bbox.cpp.i
+.PHONY : bbox.cpp.i
+
+bbox.s: bbox.cpp.s
+
+.PHONY : bbox.s
+
+# target to generate assembly for a file
+bbox.cpp.s:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/bbox.cpp.s
+.PHONY : bbox.cpp.s
+
 buffer.o: buffer.cpp.o
 
 .PHONY : buffer.o
@@ -150,6 +177,33 @@ buffer.cpp.s:
 	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/buffer.cpp.s
 .PHONY : buffer.cpp.s
 
+bvh.o: bvh.cpp.o
+
+.PHONY : bvh.o
+
+# target to build an object file
+bvh.cpp.o:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/bvh.cpp.o
+.PHONY : bvh.cpp.o
+
+bvh.i: bvh.cpp.i
+
+.PHONY : bvh.i
+
+# target to preprocess a source file
+bvh.cpp.i:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/bvh.cpp.i
+.PHONY : bvh.cpp.i
+
+bvh.s: bvh.cpp.s
+
+.PHONY : bvh.s
+
+# target to generate assembly for a file
+bvh.cpp.s:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/bvh.cpp.s
+.PHONY : bvh.cpp.s
+
 camera.o: camera.cpp.o
 
 .PHONY : camera.o
@@ -176,6 +230,33 @@ camera.s: camera.cpp.s
 camera.cpp.s:
 	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/camera.cpp.s
 .PHONY : camera.cpp.s
+
+cook_torrance.o: cook_torrance.cpp.o
+
+.PHONY : cook_torrance.o
+
+# target to build an object file
+cook_torrance.cpp.o:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/cook_torrance.cpp.o
+.PHONY : cook_torrance.cpp.o
+
+cook_torrance.i: cook_torrance.cpp.i
+
+.PHONY : cook_torrance.i
+
+# target to preprocess a source file
+cook_torrance.cpp.i:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/cook_torrance.cpp.i
+.PHONY : cook_torrance.cpp.i
+
+cook_torrance.s: cook_torrance.cpp.s
+
+.PHONY : cook_torrance.s
+
+# target to generate assembly for a file
+cook_torrance.cpp.s:
+	$(MAKE) -f CMakeFiles/Raytracer.dir/build.make CMakeFiles/Raytracer.dir/cook_torrance.cpp.s
+.PHONY : cook_torrance.cpp.s
 
 diffuse.o: diffuse.cpp.o
 
@@ -591,12 +672,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Raytracer"
+	@echo "... bbox.o"
+	@echo "... bbox.i"
+	@echo "... bbox.s"
 	@echo "... buffer.o"
 	@echo "... buffer.i"
 	@echo "... buffer.s"
+	@echo "... bvh.o"
+	@echo "... bvh.i"
+	@echo "... bvh.s"
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
+	@echo "... cook_torrance.o"
+	@echo "... cook_torrance.i"
+	@echo "... cook_torrance.s"
 	@echo "... diffuse.o"
 	@echo "... diffuse.i"
 	@echo "... diffuse.s"

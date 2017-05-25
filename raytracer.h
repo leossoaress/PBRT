@@ -39,7 +39,7 @@ public:
 
     float function_fresnel(float n1, float n2, IntersectionRecord &intersection_record, Ray ray);
 
-    float number_rays = 100;
+    float number_rays = 1000;
     int numero_threads=4;
 
 
