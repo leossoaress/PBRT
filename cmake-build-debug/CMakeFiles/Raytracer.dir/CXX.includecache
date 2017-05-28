@@ -72,6 +72,20 @@ onb.h
 ray.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
 
+/home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.cpp
+cook_torrance.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.h
+
+/home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.h
+glm/glm.hpp
+-
+material.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+intersection_record.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
+sstream
+-
+
 /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.cpp
 diffuse.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.h
@@ -265,6 +279,8 @@ smooth_dielectric.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/smooth_dielectric.h
 bvh.h
 /home/leo/Documents/UFPB/PBRT/Raytracer/bvh.h
+cook_torrance.h
+/home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.h
 assimp/Importer.hpp
 -
 assimp/scene.h

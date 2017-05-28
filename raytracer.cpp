@@ -20,8 +20,6 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
 
     glm::vec3 Lo = {0.0f, 0.0f, 0.0f};
 
-    float pdf = 1.0f/(2.0f * PI);
-
     Ray refl_ray;
 
     if ( curr_depth < 5 ) {
@@ -48,7 +46,7 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
                 Lo = L(refl_ray, ++curr_depth);
             }
 
-            else // vidro
+            else if(intersection_record.material_->get_tipo() == 3)// vidro
             {
                 if (glm::dot(intersection_record.normal_, ray.direction_) < 0) //entrando do vidro
                 {
@@ -106,6 +104,83 @@ glm::vec3 RayTracer::L( Ray &ray, size_t curr_depth)
                         Lo = L(refl_ray, ++curr_depth);
                     }
                 }
+            }
+            else
+            {
+                //roughness factor
+
+                float m = 0.35f;
+
+                //Importance sampling
+
+                ONB tangent_frame;
+                tangent_frame.setFromV( intersection_record.normal_ );
+
+                glm::dmat3x3 tangent_to_universe_space = tangent_frame.getBasisMatrix();
+                glm::dmat3x3 universe_to_tangent_space = glm::transpose( tangent_to_universe_space );
+
+                glm::dvec3 w_i = universe_to_tangent_space * -ray.direction_;
+
+                float r1 = ((double)rand()/(RAND_MAX));
+
+                float r2 = ((double)rand()/(RAND_MAX));
+
+                float phi = 2.0f * PI * r2;
+
+                float theta = glm::atan(glm::sqrt( -(m * m) * glm::log(1 - r1)));
+
+                glm::dvec3 p = {glm::cos(phi) * glm::sin(theta), glm::cos(theta), glm::sin(phi) *  glm::sin(theta)};
+
+                glm::dvec3 w_r = 2.0 * p * glm::dot( p, w_i ) - w_i;
+
+                glm::dvec3 new_dir = tangent_to_universe_space * w_r;
+
+
+                refl_ray = { (glm::dvec3) intersection_record.position_ + new_dir * 0.00001, new_dir };
+
+
+                glm::dvec3 h = glm::normalize( w_i + w_r );
+                double nh = std::abs( h.y );
+                double nv = std::abs( w_i.y );
+                double nl = std::abs( w_r.y );
+                double vh = std::abs( glm::dot( w_i, h ) );
+                double lh = std::abs( glm::dot( w_r, h ) );
+
+                // Beckmann normal distribution function
+                double nh_2 = nh * nh;
+                double m_2 = m * m;
+                double d1 = 1.0 / ( M_PI * m_2 * nh_2 * nh_2 );
+                double d2 = ( nh_2 - 1.0 ) / ( m_2 * nh_2 );
+                double d = d1 * exp( d2 );
+
+                // Cook-Torrance geometric attenuation
+                double g1 = 2.0 * nh / vh;
+                double g = std::min( 1.0, std::min( g1 * nv, g1 * nl ) );
+
+                // Fresnel term
+                glm::dvec3 r0 = intersection_record.material_->BRDF_;
+                const double x = 1.0f - lh;
+                glm::dvec3 F = r0 + ( 1.0 - r0 ) * x * x * x * x * x;
+
+                glm::dvec3 rough_specular_term = ( F * d * g ) / ( 4.0 * nv * nl );
+
+                //PDF
+                double om = glm::dot( w_r, h );
+                double a = ( d1 * exp( d2 ) * nh ) / ( 4.0 * ( om ) );
+
+                //Cook-torrance
+                glm::vec3 ct = 1.0 / a  * rough_specular_term;
+
+                if ( w_r.y < 0.0 )
+                    ct = glm::vec3{ 0.0, 0.0, 0.0 };
+
+
+                Lo = intersection_record.material_->get_emitancia() +
+                     ct * L(refl_ray, ++curr_depth) *
+                     glm::dot(intersection_record.normal_,
+                     refl_ray.direction_);
+
+
             }
         }
 

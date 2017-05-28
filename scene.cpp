@@ -69,9 +69,10 @@ bool Scene::intersect( const Ray &ray, IntersectionRecord &intersection_record) 
 void Scene::load( void )
 {
 
-    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ -0.5f, 0.5f, 0.5f }, 0.3f,  new Mirror() ) ) );
-    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ 0.5f, 0.5f, 0.5f }, 0.3f, new SmoothDielectric() ) ) );
-
+    //primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ 0.0f, 0.5f, 0.0f }, 0.3f,  new CookTorrance(glm::vec3{0.5f,0.2f,0.8f}) ) ) );
+    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ 3.0f, 1.0f, 8.0f }, 1.0f, new Lightsource({30.0f,30.0f,30.0f}) ) ) );
+    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ -3.0f, 1.0f, 8.0f }, 1.0f, new Lightsource({30.0f,30.0f,30.0f}) ) ) );
+    primitives_.push_back( Primitive::PrimitiveUniquePtr( new Sphere(glm::vec3{ 0.0f, 1.0f, 15.0f }, 3.0f, new Lightsource({30.0f,30.0f,30.0f}) ) ) );
 }
 
 void Scene::buildAccelerationStructure( void )
@@ -173,7 +174,7 @@ void Scene::loadObj(const char* obj)
     }
 }
 
-void Scene::loadObj(const char* obj, glm::vec3 cor)
+void Scene::loadObj(const char* obj, glm::vec3 cor,glm::vec3 position, float size, int type)
 {
 
 
@@ -223,23 +224,47 @@ void Scene::loadObj(const char* obj, glm::vec3 cor)
             xi1 = (float)scene->mMeshes[i]->mVertices[i1].x;
             yi1 = (float)scene->mMeshes[i]->mVertices[i1].y;
             zi1 = (float)scene->mMeshes[i]->mVertices[i1].z;
-            glm::vec3 vertice1{ xi1,yi1,zi1 };
+            //glm::vec3 vertice1{ xi1,yi1,zi1 };
+            glm::vec3 vertice1{xi1+position.x,yi1+position.y,zi1+position.z};
 
             // Coordenadas do segundo vertice do triangulo
             xi2 = (float)scene->mMeshes[i]->mVertices[i2].x;
             yi2 = (float)scene->mMeshes[i]->mVertices[i2].y;
             zi2 = (float)scene->mMeshes[i]->mVertices[i2].z;
-            glm::vec3 vertice2{ xi2,yi2,zi2 };
+            //glm::vec3 vertice2{ xi2,yi2,zi2 };
+            glm::vec3 vertice2{ xi2+position.x,yi2+position.y,zi2+position.z};
 
             // Coordenadas do terceiro vertice do triangulo
             xi3 = (float)scene->mMeshes[i]->mVertices[i3].x;
             yi3 = (float)scene->mMeshes[i]->mVertices[i3].y;
             zi3 = (float)scene->mMeshes[i]->mVertices[i3].z;
-            glm::vec3 vertice3{ xi3,yi3,zi3 };
+            //glm::vec3 vertice3{ xi3,yi3,zi3 };
+            glm::vec3 vertice3{ xi3+position.x,yi3+position.y,zi3+position.z};
 
             glm::vec3 a = cor;
-            primitives_.push_back(Primitive::PrimitiveUniquePtr(new Triangle(  vertice1, vertice2,  vertice3, new Diffuse (a)  ) ) );
 
+            if(type == 0)
+            {
+                primitives_.push_back(Primitive::PrimitiveUniquePtr(new Triangle(  vertice1*size, vertice2*size,  vertice3*size, new Diffuse(a)  ) ) );
+            }
+            else if(type == 1)
+            {
+                primitives_.push_back(Primitive::PrimitiveUniquePtr(new Triangle(  vertice1*size, vertice2*size,  vertice3*size, new Lightsource(a)  ) ) );
+            }
+            else if(type == 2)
+            {
+                primitives_.push_back(Primitive::PrimitiveUniquePtr(new Triangle(  vertice1*size, vertice2*size,  vertice3*size, new Mirror()  ) ) );
+            }
+            else if(type == 3)
+            {
+                primitives_.push_back(Primitive::PrimitiveUniquePtr(new Triangle(  vertice1*size, vertice2*size,  vertice3*size, new SmoothDielectric()  ) ) );
+            }
+            else
+            {
+                primitives_.push_back(Primitive::PrimitiveUniquePtr(new Triangle(  vertice1*size, vertice2*size,  vertice3*size, new CookTorrance(a)  ) ) );
+            }
+
+            //primitives_.push_back(Primitive::PrimitiveUniquePtr(new Triangle(  vertice1, vertice2,  vertice3, new Lightsource({20.0f,20.0f,20.0f})  ) ) );
 
         }
     }

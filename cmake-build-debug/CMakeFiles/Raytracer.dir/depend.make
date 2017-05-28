@@ -23,6 +23,12 @@ CMakeFiles/Raytracer.dir/camera.cpp.o: ../camera.h
 CMakeFiles/Raytracer.dir/camera.cpp.o: ../onb.h
 CMakeFiles/Raytracer.dir/camera.cpp.o: ../ray.h
 
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o: ../cook_torrance.cpp
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o: ../cook_torrance.h
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o: ../intersection_record.h
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o: ../material.h
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o: ../ray.h
+
 CMakeFiles/Raytracer.dir/diffuse.cpp.o: ../diffuse.cpp
 CMakeFiles/Raytracer.dir/diffuse.cpp.o: ../diffuse.h
 CMakeFiles/Raytracer.dir/diffuse.cpp.o: ../intersection_record.h
@@ -39,6 +45,7 @@ CMakeFiles/Raytracer.dir/main.cpp.o: ../bbox.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../buffer.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../bvh.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../camera.h
+CMakeFiles/Raytracer.dir/main.cpp.o: ../cook_torrance.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../diffuse.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../intersection_record.h
 CMakeFiles/Raytracer.dir/main.cpp.o: ../lightsource.h
@@ -97,6 +104,7 @@ CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../bbox.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../buffer.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../bvh.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../camera.h
+CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../cook_torrance.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../diffuse.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../intersection_record.h
 CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../lightsource.h
@@ -114,6 +122,7 @@ CMakeFiles/Raytracer.dir/raytracer.cpp.o: ../triangle.h
 
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../bbox.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../bvh.h
+CMakeFiles/Raytracer.dir/scene.cpp.o: ../cook_torrance.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../diffuse.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../intersection_record.h
 CMakeFiles/Raytracer.dir/scene.cpp.o: ../lightsource.h

@@ -5,7 +5,7 @@
 CookTorrance::CookTorrance(const glm::vec3 cor)
 {
     emitancia_ = {0.0f, 0.0f, 0.0f};
-    BRDF_ = cor/PI;
+    BRDF_ = cor;
 }
 
 glm::vec3 CookTorrance::get_BRDF() const

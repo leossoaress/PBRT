@@ -16,6 +16,7 @@
 #include "mirror.h"
 #include "smooth_dielectric.h"
 #include "bvh.h"
+#include "cook_torrance.h"
 
 #include <assimp/Importer.hpp>      // C++ importer interface
 #include <assimp/scene.h>           // Output data structure
@@ -46,7 +47,7 @@ public:
 
     void loadObj(const char* objFile);
 
-    void loadObj(const char* obj, glm::vec3 cor);
+    void loadObj(const char* obj, glm::vec3 cor,glm::vec3 position, float size, int type);
 
     std::vector< Primitive::PrimitiveUniquePtr > primitives_;
 

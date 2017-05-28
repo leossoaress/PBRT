@@ -23,6 +23,12 @@ CMakeFiles/Raytracer.dir/camera.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/camera.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/onb.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
+CMakeFiles/Raytracer.dir/cook_torrance.cpp.o
+ /home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.cpp
+ /home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/material.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/ray.h
 CMakeFiles/Raytracer.dir/diffuse.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.cpp
  /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.h
@@ -40,6 +46,7 @@ CMakeFiles/Raytracer.dir/main.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/buffer.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/bvh.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/camera.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.h
@@ -98,6 +105,7 @@ CMakeFiles/Raytracer.dir/raytracer.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/buffer.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/bvh.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/camera.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.h
@@ -115,6 +123,7 @@ CMakeFiles/Raytracer.dir/raytracer.cpp.o
 CMakeFiles/Raytracer.dir/scene.cpp.o
  /home/leo/Documents/UFPB/PBRT/Raytracer/bbox.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/bvh.h
+ /home/leo/Documents/UFPB/PBRT/Raytracer/cook_torrance.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/diffuse.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/intersection_record.h
  /home/leo/Documents/UFPB/PBRT/Raytracer/lightsource.h
