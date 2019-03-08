@@ -39,13 +39,11 @@ public:
 
     float function_fresnel(float n1, float n2, IntersectionRecord &intersection_record, Ray ray);
 
-    float number_rays = 500;
-    int numero_threads=4;
+    float number_rays = 10000;
+    int numero_threads = 4;
 
 
 private:
-
-
 
     const Camera &camera_;
 
