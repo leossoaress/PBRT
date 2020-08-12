@@ -41,6 +41,7 @@ Federal University of Paraiba, Brazil.
  ## Authors
  
  * **Leoberto Soares** - [leossoaress](https://github.com/leossoaress)
+ * **David Kastle** - [Davidsksilva](https://github.com/Davidsksilva)
 
 ## License
 
